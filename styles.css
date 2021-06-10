@@ -1,0 +1,240 @@
+@charset "UTF-8";
+
+html {
+    box-sizing: border-box;
+    }
+*, *:before, *:after {
+    box-sizing: inherit;
+    }
+
+body {
+    background-color: white;
+    margin: 0 0.5em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link, a:visited { 
+    color: navy; 
+}
+a:focus, a:hover, a:active { 
+    color: blue; 
+}
+
+header a:link, header a:visited, header a:focus, header a:hover, header a:active {
+    color: white;
+}
+
+header {
+    background-image: url("images/Jan_Matejko\,_Bitwa_pod_Grunwaldem\ \(3\).jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+header img {
+    width: 100%;
+}
+
+#news {
+ font-family: 'Times New Roman', Times, serif;
+ padding: 1em;
+ background-color: #b8bbbf;
+ margin-top: 1.5em;
+}
+
+#news h2 {
+    letter-spacing: 0.3em;
+}
+
+#news strong {
+    text-transform: uppercase;
+}
+
+#news a {
+    text-transform: uppercase;
+    border-bottom: 1px solid;
+}
+
+h1 {
+    font-size: 300%;
+    font-family: 'Snell Roundhand', cursive;
+    font-weight: normal;
+    text-transform: uppercase;
+    text-align:center;
+    margin: 0px;
+    color: white;
+}
+
+nav {
+    background-color:navy;
+    padding: 1.5em;
+    opacity: 0.7;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav ul li
+{
+    font-size: .8em;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    flex: 1 1 50%
+}
+
+nav ul li a {
+    display: block;
+    border: 1px solid;
+    padding: 1em 2em;
+    margin: .25em;
+}
+
+nav ul li a:link, nav ul li a:visited {
+    color: white;
+}
+nav ul li a:focus, nav ul li a:hover, nav ul li a:active {
+    color: navy;
+    background-color: white;
+}
+
+img {
+    display: block;
+    margin: .5em auto;
+}
+
+.new img{
+    display: block;
+    width: 60%;
+    max-width: 200px;
+    margin: .5em auto;
+}
+
+main img {
+    width: 100%;
+    max-width: 400px;
+    clear: left;
+}
+
+main ul, main ol {
+    margin: 1em 10%;
+}
+
+.new img{
+    width: 60%;
+    max-width: 300px;
+}
+
+.new {
+    border-bottom: 2px solid black;
+    margin-bottom: 2em;
+}
+
+footer {
+    margin-top: 2em;
+    background-color:#3d3e40;
+    padding: 1em;
+}
+
+footer p {
+    color: white;
+    text-align: center;
+}
+
+div.newsletter {
+    background-color: navy;
+    padding: 2em;
+}
+
+div.newsletter p {
+    display: flex;
+    flex-wrap: wrap;
+}
+h2.newsletter {
+    clear: left;
+}
+
+input[type="email"]{
+    flex: 1 1 auto;
+    height: 3em;
+    border: 1px solid white;
+    border-radius: 0;
+    font-family: inherit; 
+}
+
+input[type="submit"]
+{
+    flex:  0 0 auto;
+    height: 3em;
+    width: 10em;
+    background-color: #3d3e40;
+    border: 1px solid white;
+    color: white;
+    border-radius: 0;
+    font-family: inherit; 
+}
+
+input[type="checkbox"] {
+    font-family: inherit; 
+}
+
+.textwhite {
+    color: white;
+    font-size: small;
+}
+
+.build {
+    color: red;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.source {
+    font-style: italic;
+    color: silver;
+}
+
+@media screen and (min-width: 500px) {
+    main img {
+        float: left;
+        margin: 0 1em 1em 0;
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 700px){
+    nav ul li {
+        flex: none
+    }
+    nav ul {
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    body {
+        margin: 0 15%;
+    }
+
+    #mainaside {
+        display: flex;
+    }
+
+    #news {
+        order: 1;
+        margin-left: 3em;
+        flex: 1 0 100px;
+    }
+
+    main {
+        flex: 3 0 0;
+    }
+}
